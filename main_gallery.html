@@ -10,18 +10,62 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+		#navbar {
+			background-color: #333;
+			position: fixed;
+			top: -50px;
+			width: 100%;
+			display:block;
+			transition: top 0.3s;
+			z-index: 500;
+		}
+		#navbar a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 15px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+		#navbar a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+	</style>
 	</head>
 	<body>
 		<div class="page-wrap">
 
 			<!-- Nav -->
-				<nav id="nav">
-					<ul>
-						<li><a href="main_gallery.html" class="active"><span class="icon fa-home"></span></a></li>
-						<li><a href="full_gallery.html"><span class="icon fa-camera-retro"></span></a></li>
-						<li><a href="about_us.html"><span class="icon fa-file-text-o"></span></a></li>
+<div class="navbar-wrapper hidingNav">
+	<div class="container">
+		<nav class="navbar navbar-inverse navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav cl-effect-7">
+						<a href="index.html" class="page-scroll">Home</a>
+						<a href="#about" class="page-scroll">About</a>
+						<a href="#posts" class="page-scroll">Posts</a>
+						<a href="#service" class="page-scroll">Events</a>
+						<a href="#gallery" class="page-scroll">Gallery</a>
+						<a href="#team" class="page-scroll">Team</a>
+						<a href="contact3.html" class="page-scroll">Contact</a>
 					</ul>
-				</nav>
+				</div>
+			</div>
+		</nav>
+	</div>
+</div>
+				
 
 			<!-- Main -->
 				<section id="main">
@@ -47,28 +91,28 @@
 									</header>
 									<div class="content">
 										<div class="media">
-											<a href="images/fulls/01.jpg"><img src="images/thumbs/01.jpg" alt="" title="This right here is a caption." /></a>
+											<a href="assets/images/fulls/01.jpg"><img src="assets/images/thumbs/01.jpg" alt="" title="This right here is a caption." /></a>
 										</div>
 										<div class="media">
-											<a href="images/fulls/05.jpg"><img src="images/thumbs/05.jpg" alt="" title="This right here is a caption." /></a>
+											<a href="assets/images/fulls/05.jpg"><img src="assets/images/thumbs/05.jpg" alt="" title="This right here is a caption." /></a>
 										</div>
 										<div class="media">
-											<a href="images/fulls/09.jpg"><img src="images/thumbs/09.jpg" alt="" title="This right here is a caption." /></a>
+											<a href="assets/images/fulls/09.jpg"><img src="assets/images/thumbs/09.jpg" alt="" title="This right here is a caption." /></a>
 										</div>
 										<div class="media">
-											<a href="images/fulls/02.jpg"><img src="images/thumbs/02.jpg" alt="" title="This right here is a caption." /></a>
+											<a href="assets/images/fulls/02.jpg"><img src="assets/images/thumbs/02.jpg" alt="" title="This right here is a caption." /></a>
 										</div>
 										<div class="media">
-											<a href="images/fulls/06.jpg"><img src="images/thumbs/06.jpg" alt="" title="This right here is a caption." /></a>
+											<a href="assets/images/fulls/06.jpg"><img src="assets/images/thumbs/06.jpg" alt="" title="This right here is a caption." /></a>
 										</div>
 										<div class="media">
-											<a href="images/fulls/10.jpg"><img src="images/thumbs/10.jpg" alt="" title="This right here is a caption." /></a>
+											<a href="assets/images/fulls/10.jpg"><img src="assets/images/thumbs/10.jpg" alt="" title="This right here is a caption." /></a>
 										</div>
 										<div class="media">
-											<a href="images/fulls/03.jpg"><img src="images/thumbs/03.jpg" alt="" title="This right here is a caption." /></a>
+											<a href="assets/images/fulls/03.jpg"><img src="assets/images/thumbs/03.jpg" alt="" title="This right here is a caption." /></a>
 										</div>
 										<div class="media">
-											<a href="images/fulls/07.jpg"><img src="images/thumbs/07.jpg" alt="" title="This right here is a caption." /></a>
+											<a href="assets/images/fulls/07.jpg"><img src="assets/images/thumbs/07.jpg" alt="" title="This right here is a caption." /></a>
 										</div>
 									</div>
 									<footer>
@@ -77,47 +121,7 @@
 								</div>
 						</section>
 
-					<!-- Contact -->
-						<section id="contact">
-							<!-- Social -->
-								<div class="social column">
-									<h3>About US</h3>
-									<p>Our Technical Society is one of the most active societies in Student Activity Centre, Thapar University with eighteen Satellite Clubs under its auspices. The aim of this society is to promote and encourage technical innova-tion and entrepreneurship among students by organizing modeling-workshops, Technical Seminars, Train-ing Courses etc. </p>
-									<p>Followings are the subject areas where the satellite clubs of Technical society are involved at present: Astrophysics, Automobile, Aerospace, Robotics, Fluid Dynamics, Software, Infrastructure, Mathematics, Business Management and Entrepreneurship. Technical society also organizes a national level Techno-management festival every year that attracts participation from various organizations and institutions of our country.</p>
-									<ul class="actions">
-											<li><a href="about_us.html"><input value="Read More" class="button" type="submit"></a></li>
-									</ul>
-									<h3>Follow Us</h3>
-									<ul class="icons">
-										<li><a href="www.facebook.com/msc2k17/" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-									</ul>
-								</div>
-
-							<!-- Form -->
-								<div class="column">
-									<h3>Get in Touch</h3>
-									<form action="#" method="post">
-										<div class="field half first">
-											<label for="name">Name</label>
-											<input name="name" id="name" type="text" placeholder="Name">
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input name="email" id="email" type="email" placeholder="Email">
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
-										</div>
-										<ul class="actions">
-											<li><input value="Send Message" class="button" type="submit"></li>
-										</ul>
-									</form>
-								</div>
-
-						</section> 
+					
 
 					<!-- Footer -->
 			<!--			<footer id="footer">
@@ -127,8 +131,19 @@
 						</footer>
 				</section>
 		</div>
-
 		<!-- Scripts -->
+		<script>
+    // When the user scrolls down 20px from the top of the document, slide down the navbar
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > screen.width/2 || document.documentElement.scrollTop > screen.width/2) {
+            document.getElementById("navbar").style.top = "0";
+        }
+        else {
+            document.getElementById("navbar").style.top = "-50px";
+        }
+    }
+</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
