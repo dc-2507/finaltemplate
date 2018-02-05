@@ -10,11 +10,16 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<style>
 		#navbar {
 			background-color: #333;
 			position: fixed;
-			top: -50px;
+			top: 0px;
 			width: 100%;
 			display:block;
 			transition: top 0.3s;
@@ -25,7 +30,7 @@
 			display: block;
 			color: #f2f2f2;
 			text-align: center;
-			padding: 15px;
+			padding: 10px;
 			text-decoration: none;
 			font-size: 17px;
 		}
@@ -36,9 +41,36 @@
 	</style>
 	</head>
 	<body>
-		<div class="page-wrap">
+		
 
-			
+			<!-- Nav -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><p><img src="assets/images/LogoM.png" alt="Chicago" height="30" width="30">MICROSOFT Student Chapter</p></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+			<ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Posts</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Gallery</a></li>
+				<li><a href="#">Team</a></li>
+				<li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 			<!-- Main -->
 				<section id="main">
@@ -56,9 +88,9 @@
 											<h1>Gallery</h1>
 											<ul class="tabs">
 												<li><a href="#" data-tag="all" class="button active">All</a></li>
-												<li><a href="#" data-tag="people" class="button">People</a></li>
-												<li><a href="#" data-tag="place" class="button">Places</a></li>
-												<li><a href="#" data-tag="thing" class="button">Things</a></li>
+												<li><a href="#" data-tag="people" class="button">Inspirus</a></li>
+												<li><a href="#" data-tag="place" class="button">Rumble</a></li>
+												<li><a href="#" data-tag="thing" class="button">Event 3</a></li>
 											</ul>
 										</header>
 
@@ -108,18 +140,7 @@
 						
 
 		<!-- Scripts -->
-		<script>
-    // When the user scrolls down 20px from the top of the document, slide down the navbar
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction() {
-        if (document.body.scrollTop > screen.width/2 || document.documentElement.scrollTop > screen.width/2) {
-            document.getElementById("navbar").style.top = "0";
-        }
-        else {
-            document.getElementById("navbar").style.top = "-50px";
-        }
-    }
-</script>
+		
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
