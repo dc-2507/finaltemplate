@@ -7,15 +7,18 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
+    padding-bottom: 10px;
 }
 
 .teamy__layout{
     position: relative;
+    padding-bottom: 10px;
 }
 
 .teamy__preview{
     position: relative;
     overflow: hidden;
+    padding-bottom: 10px;
 }
 
 .teamy__avatar{
@@ -23,6 +26,7 @@
     max-width: 100%;
     position: relative;
     z-index: 1;
+    padding-bottom: 10px;
 }
 
 .teamy__preview:before{
@@ -79,17 +83,20 @@
  }
 
 .teamy__content{
-     padding: 20px;
+     padding:10px;
+     
 }
 
 .teamy__name{
     font-size: 1.3em;
+    padding-bottom: 5px;
 }
 
 .teamy__post{
-    margin-top: .5em;
-    font-size: .8em;
+    margin-top: 0em;
+    font-size: 1em;
     text-transform: uppercase;
+    padding-bottom: 20px;
 }
 
 /* style 1 */
